@@ -1,7 +1,9 @@
 body {
     font-family: 'Archivo', sans-serif;
 }
-
+.section {
+    padding: 1.5rem;
+}
 .sidenav {
     height: 100%;
     width: 250px;
@@ -48,8 +50,13 @@ body {
 }
 .table thead th {
     color: #225378;
+    border-color: #EB7F00;
 }
 .contact-button {
     float: right;
     margin-top: 1em;
+}
+.label {
+    color: #225378;
+    margin: .5em 0 .5em 0;
 }
