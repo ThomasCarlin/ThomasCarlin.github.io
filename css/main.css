@@ -32,8 +32,6 @@ body {
 
 .main {
     margin-left: 250px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -44,4 +42,14 @@ body {
 .sidenav hr {
     width: 80%;
     background-color:#EB7F00;
+}
+.hero.is-primary {
+    background-color: #1695A3;
+}
+.table thead th {
+    color: #225378;
+}
+.contact-button {
+    float: right;
+    margin-top: 1em;
 }
