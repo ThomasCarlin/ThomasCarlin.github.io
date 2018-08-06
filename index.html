@@ -2,8 +2,11 @@
 <html>
 
 <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" integrity="sha256-zKA1Bf41O96+gJSlkn/Bh2HATW/OhwkApPlYTp3B5O8="
@@ -12,7 +15,24 @@
 </head>
 
 <body>
-    <div class="sidenav">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-start">
+                <!-- navbar items -->
+                <a class="navbar-item">
+                        Home
+                      </a>
+            </div>
+
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    </nav>
+    <div class="sidenav is-hidden-touch">
         <a href="#about">About</a>
         <a href="#services">Projects</a>
         <a href="#clients">Videography</a>
@@ -24,15 +44,15 @@
         <a>Resume</a>
     </div>
 
-    <div class="main">
+    <main>
         <section class="hero is-primary">
             <div class="hero-body">
                 <h1 class="title">About Me</h1>
             </div>
         </section>
         <section class="section">
-            <div class="columns">
-                <div class="column is-2">
+            <div class="columns is-multiline">
+                <div class="column is-hidden-mobile is-2-desktop">
                     <figure class="image is-square">
                         <img src="images/profile_small.jpg">
                     </figure>
@@ -51,6 +71,11 @@
                             <a href="https://www.tealsk12.org/">TEALS</a> and at The Ohio State University I was a part of
                             <a href="https://www.thelantern.com/2015/04/student-org-reaches-out-to-help-feed-the-homeless/">Crosswalk Outreach to the Homeless</a>, a student group dedicated to help those in need.
 
+                        </p>
+                        <p>
+                            I'm also dabbling into doing videography and photography. My first video was at the second
+                            <a
+                                href="https://www.youtube.com/watch?v=vLFE5nKHSYI">OH/IO hackathon</a>.
                         </p>
                         <p>
                             - Thomas Carlin tcarlin11@gmail.com
@@ -130,14 +155,14 @@
                                     <form action="https://formspree.io/tcarlin11@gmail.com" method="POST">
                                         <label class="label">Email Address</label>
                                         <p class="control has-icons-left has-icons-right">
-                                                <input class="input" type="email" placeholder="Email" name="_replyto">
-                                                <span class="icon is-small is-left">
-                                                  <i class="fas fa-envelope"></i>
-                                                </span>
-                                              </p>
-                                              <label class="label">Message</label>
-                                              <textarea class="textarea" name="message"></textarea>
-                                              <input class="button contact-button" type="submit" value="Send Message">
+                                            <input class="input" type="email" placeholder="Email" name="_replyto">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                        </p>
+                                        <label class="label">Message</label>
+                                        <textarea class="textarea" name="message"></textarea>
+                                        <input class="button contact-button" type="submit" value="Send Message">
                                     </form>
                                 </td>
                             </tr>
@@ -147,7 +172,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
 </body>
 

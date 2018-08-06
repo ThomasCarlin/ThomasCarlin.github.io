@@ -1,7 +1,7 @@
 body {
     font-family: 'Archivo', sans-serif;
 }
-.section {
+section {
     padding: 1.5rem;
 }
 .sidenav {
@@ -32,9 +32,15 @@ body {
     color: #F3FFE2;
 }
 
-.main {
-    margin-left: 250px; /* Same as the width of the sidenav */
+@media screen and (min-width: 1087px) {
+    main {
+        margin-left: 250px; /* Same as the width of the sidenav */
+    }
+    .navbar-mobile {
+        display:none;
+    }
 }
+
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -59,4 +65,31 @@ body {
 .label {
     color: #225378;
     margin: .5em 0 .5em 0;
+}
+.notification {
+    border-radius: 0;
+}
+.tile, .tile.is-parent {
+    padding: 0;
+}
+.tile.is-vertical > .tile.is-child:not(:last-child) {
+    margin-bottom: 0 !important;
+}
+.is-photography-section {
+    padding: 0;
+}
+.tile.is-ancestor {
+    margin: 0;
+}
+.columns {
+    display:flex;
+}
+
+.column-2 {
+    flex-shrink: 2;
+    min-width: 0;
+}
+
+.column-10 {
+    flex-grow:10;
 }
